@@ -79,6 +79,7 @@ class EvtPinListener : public EvtListener {
   bool mustStartOpposite = true;
   bool startState;
   unsigned long firstNoticed = 0;
+  bool currentValue = !targetValue;
 
   void setupListener();
   bool isEventTriggered();
