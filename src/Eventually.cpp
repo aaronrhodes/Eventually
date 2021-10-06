@@ -145,7 +145,7 @@ bool EvtListener::isEventTriggered()
 
 bool EvtListener::performTriggerAction(EvtContext *ctx)
 {
-  return (*triggerAction)(this, ctx);
+  return triggerAction(this, ctx);
 }
 
 /* *** EVT PIN LISTENER *** */
